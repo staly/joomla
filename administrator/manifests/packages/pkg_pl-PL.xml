@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<extension type="package" version="3.3">
+<name>Polish Language Pack</name>
+<packagename>pl-PL</packagename> <!-- the packagename has to be the same as the name of pkg_whatever.xml -->
+<version>3.3.4.1</version> <!-- change the version # when updating, will display in manager -->
+<creationDate>2014-09-24</creationDate> <!-- will display in manager -->
+<author>Polski Zespół Tłumaczy</author> <!-- will display in manager -->
+<authorEmail>zwiastun@joomla.pl</authorEmail> <!-- will display in manager -->
+<authorUrl>www.joomla.pl</authorUrl> <!-- will display in manager -->
+<description>
+
+    <![CDATA[
+	<h3>3.3.4 Joomla - pakiet języka polskiego</h3>
+	
+<p><span style="font-weight: normal">Polskie Centrum Joomla zapewnia społeczności kompletne tłumaczenia Joomla!.<br />
+      Ich przygotowanie kosztuje wiele czasu i pracy.</span></p>
+      
+      <h2>My wspieramy Ciebie, Ty wesprzyj nas!</h2>	
+	
+      
+      <p>
+        <span style="font-size: 1.2em;font-weight:bold">
+          <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=ZL442C5WE8FT2">
+            <div class="m" style="margin: 10px auto; width: 40%;">Przekaż darowniznę za pomocą PayPal</div>
+          </a>
+        </span>
+        </p> 
+
+	<p>&nbsp;</p>
+        <h3 style="margin:0;">Nie korzystasz z PayPal?</h3>
+    <p><a href="http://fundacja.joomla.pl/pomagaj?id=62">Zobacz tutaj</a>,<br />
+jak możesz wsprzeć Fundację PCJ Otwarte Źródła</p>
+	<p>&nbsp;</p><p>&nbsp;</p>
+	]]>
+</description>
+<files>
+        <file type="language" client="site" id="pl-PL">site_pl-PL.zip</file>
+        <file type="language" client="administrator" id="pl-PL">admin_pl-PL.zip</file>
+</files>
+         <updateservers>
+                <server type="collection" priority="1" name="Accredited Joomla! Translations">http://update.joomla.org/language/translationlist.xml</server>
+        </updateservers>
+</extension>
+
+
+
