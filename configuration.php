@@ -1,6 +1,6 @@
 <?php
 class JConfig {
-	public $offline = '0';
+	public $offline = '1';
 	public $offline_message = 'Witryna została wyłączona ze względu na prace konserwacyjne.<br />Proszę zajrzyj tu ponownie za jakiś czas.';
 	public $display_offline_message = '1';
 	public $offline_image = '';
@@ -58,4 +58,7 @@ class JConfig {
 	public $tmp_path = 'C:\\xampp\\htdocs\\Joomla/tmp';
 	public $lifetime = '15';
 	public $session_handler = 'database';
+	public $asset_id = '1';
+	public $MetaRights = '';
+	public $sitename_pagetitles = '1';
 }
