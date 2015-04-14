@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension client="site" method="upgrade" type="module" version="2.5.0">
+	<name>MOD_HEX_MAPVIEW</name>
+	<author>HexSys Team</author>
+	<creationDate>March, 2013</creationDate>
+	<copyright>Copyright (c) 2013 HexSys Technologies. All rights reserved.</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<authorEmail>info@hexsystechnologies.com</authorEmail>
+	<authorUrl>www.hexsystechnologies.com</authorUrl>
+	<version>1.0.0</version>
+	<description>MOD_HEX_MAPVIEW_DESCR</description>
+	
+	<languages>
+	    <language tag="en-GB">language/en-GB/en-GB.mod_hex_mapview.sys.ini</language>
+		<language tag="en-GB">language/en-GB/en-GB.mod_hex_mapview.ini</language>
+    </languages>
+	
+	<files>
+		<filename module="mod_hex_mapview">mod_hex_mapview.php</filename>
+	</files>
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field name="width" type="text" default="600" label="WIDTH" description="WIDTH_DESC"/>
+		    	<field name="height" type="text" default="400" label="HEIGHT" description="HEIGHT_DESC"/>
+				<field default="5" description="ZOOM_DES" label="ZOOM_LBL" name="zoom" type="list">
+					<option value="0">0</option>
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+					<option value="6">6</option>
+					<option value="7">7</option>
+					<option value="8">8</option>
+					<option value="9">9</option>
+					<option value="10">10</option>
+					<option value="11">11</option>
+					<option value="12">12</option>
+					<option value="13">13</option>
+					<option value="14">14</option>
+					<option value="15">15</option>
+					<option value="16">16</option>
+					<option value="17">17</option>
+					<option value="18">18</option>
+					<option value="19">19</option>
+					<option value="20">20</option>
+				</field>
+				<field default="0" description="LAT_DESC" label="LAT_LBL" name="lat" type="text"/>
+				<field default="0" description="LONG_DESC" label="LONG_LBL" name="long" type="text"/>
+				<field default="" description="" label="" name="@spacer" type="spacer"/>
+				<field default="ROADMAP" description="ROAD_DESC" label="ROAD_LBL" name="mapType" type="list">
+					<option value="ROADMAP">Road Map</option>
+					<option value="SATELLITE">Satellite</option>
+					<option value="HYBRID">Hybrid</option>
+					<option value="TERRAIN">Terrain</option>
+				</field>
+				<field default="" description="" label="" name="@spacer" type="spacer"/>
+				<field default="no" description="PUB1_DESC" label="PUB1_LBL" name="pub1" type="list">
+					<option value="1">Yes</option>
+					<option value="0">No</option>
+				</field>
+				<field default="1" description="MARK1_LAT_DESC" label="MARK1_LAT_LBL" name="lat1" type="text"/>
+				<field default="1" description="MARK1_LONG_DESC" label="MARK1_LONG_LEBL" name="long1" type="text"/>
+				<field default="" description="MARK1_TITLE_DESC" label="MARK1_TITLE_LBL" name="title1" type="text"/>
+				<field cols="30" default="" description="MARK1_DESC_DESC" filter="raw" label="MARK1_DESC_LABL" name="html1" rows="5" type="textarea"/>
+				<field default="" description="" label="" name="@spacer" type="spacer"/>
+				<field default="no" description="PUB2_DESC" label="PUB2_LBL" name="pub2" type="list">
+					<option value="1">Yes</option>
+					<option value="0">No</option>
+				</field>
+				<field default="2" description="MARK2_LAT_DESC" label="MARK2_LAT_LEBL" name="lat2" type="text"/>
+				<field default="2" description="MARK2_LONG_DESC" label="MARK2_LONG_LEBEL" name="long2" type="text"/>
+				<field default="" description="MARK2_TITLE_DESC" label="MARK2_TITLE_LABL" name="title2" type="text"/>
+				<field cols="30" default="" description="MARK3_DESC_DESC" filter="raw" label="MARK3_DESC_LABL" name="html2" rows="5" type="textarea"/>
+				<field default="" description="" label="" name="@spacer" type="spacer"/>
+				<field default="no" description="PUB3_DESC" label="PUB3_LEBL" name="pub3" type="list">
+					<option value="1">Yes</option>
+					<option value="0">No</option>
+				</field>
+				<field default="3" description="MARK3_LAT_DESC" label="MARK3_LAT_LABL" name="lat3" type="text"/>
+				<field default="3" description="MARK3_LONG_DESC" label="MARKER3_LAT_LABL" name="long3" type="text"/>
+				<field default="" description="MARK3_TITLE_DESC" label="MARK3_TITLE_LABL" name="title3" type="text"/>
+				<field cols="30" default="" description="MARK3_DESC_DESC" filter="raw" label="MARK3_DESC_LABL" name="html3" rows="5" type="textarea"/>
+				<field default="" description="" label="" name="@spacer" type="spacer"/>
+				<field default="no" description="PUB4_DESC" label="PUB4_LEBL" name="pub4" type="list">
+					<option value="1">Yes</option>
+					<option value="0">No</option>
+				</field>
+				<field default="4" description="MARK4_LAT_DESC" label="MARK4_LAT_LEBL" name="lat4" type="text"/>
+				<field default="4" description="MARK4_LONG_DESC" label="MARK4_LONG_LEBL" name="long4" type="text"/>
+				<field default="" description="MARK4_TITLE_DESC" label="MARK4_TITLE_LEBL" name="title4" type="text"/>
+				<field cols="30" default="" description="MARK4_DESC_DESC" filter="raw" label="MARK4_DESC_LABL" name="html4" rows="5" type="textarea"/>
+				<field default="" description="" label="" name="@spacer" type="spacer"/>
+				<field default="no" description="PUB5_DESC" label="PUB5_LEBL" name="pub5" type="list">
+					<option value="1">Yes</option>
+					<option value="0">No</option>
+				</field>
+				<field default="5" description="MARK5_LAT_DESC" label="MARK5_LAT_LEBL" name="lat5" type="text"/>
+				<field default="5" description="MARK5_LONG_DESC" label="MARK5_LONG_LEBL" name="long5" type="text"/>
+				<field default="" description="MARK5_TITLE_DESC" label="MARK5_TITLE_LEBL" name="title5" type="text"/>
+				<field cols="30" default="" description="MARK5_DESC_DESC" filter="raw" label="MARK5_DESC_LEBL" name="html5" rows="5" type="textarea"/>
+				<field default="" description="" label="" name="@spacer" type="spacer"/>
+			</fieldset>
+			<fieldset name="advanced">
+			<field name="moduleclass_sfx" type="text" default="" label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL" description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC"/>
+			<field name="cache" type="list" default="1" label="COM_MODULES_FIELD_CACHING_LABEL" description="COM_MODULES_FIELD_CACHING_DESC">
+			  <option value="1">JGLOBAL_USE_GLOBAL</option>
+			  <option value="0">COM_MODULES_FIELD_VALUE_NOCACHING</option>
+			</field>
+			<field name="cache_time" type="text" default="900" label="COM_MODULES_FIELD_CACHE_TIME_LABEL" description="COM_MODULES_FIELD_CACHE_TIME_DESC"/>
+			<field name="cachemode" type="hidden" default="itemid">
+			  <option value="itemid"/>
+			</field>
+		</fieldset>
+		</fields>
+	</config>
+</extension>
